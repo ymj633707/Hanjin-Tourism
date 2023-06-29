@@ -1,0 +1,3019 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한진관광</title>
+
+    <!--jQuery-->
+    <script src="./js/jquery-3.6.4.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js></script>
+
+    <script src="./js/jquery.js"></script>
+
+    <!--favicon-->
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!--slick 연결-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+
+    <!--style.css 파일-->
+    <link rel="stylesheet" href="./main_style/style.css">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header class="header" id="header">
+
+        <div class="header_box">
+           
+            <div class="logo_area">
+                <div class="logo_box">
+                    <a href="./index.html"><img src="./img/logo.png" alt="logo_img"></a>
+                </div>
+            </div> <!--logo_area-->
+
+            <div class="search_area">
+                <div class="search_box">
+                        <input type="text">
+                    <div class="search_icon">
+                        <img src="./img/ico_pdt_search.jpg" alt="search_icon">
+                    </div>
+                </div>
+            </div> <!--search_area-->  
+        </div> <!--header_box-->  
+        
+        <div class="mobile_menu">
+            <input type="checkbox" id="mobile_menu_chk">
+            <label for="mobile_menu_chk" class="mobile_menu_open">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label for="mobile_menu_chk" class="mobile_menu_close">
+                <i class="fas fa-times"></i>
+            </label>
+            <div class="mobile_menu_area">
+                <div class="mobile_gnb">
+                    <ul>
+                        <li>로그인</li>
+                        <li>회원가입</li>
+                        <li>고객센터</li>
+                    </ul>
+                </div> <!--mobile_gnb-->
+                <input type="checkbox" id="mobile1">
+                <label for="mobile1" class="mobile1_label mobile_style">패키지여행</label>
+                <div class="tab_menu1 tab_menu">
+                    <input type="checkbox" id="mobile1_01">
+                    <label for="mobile1_01" class="mobile1_label01 label_style">유럽/아프리카</label>
+                    <div class="tabs1_01 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li class="blue_txt"><a href="./sub_page/sub_page.html">서유럽</a></li>
+                                <li><a href="#!">동유럽</a></li>
+                                <li><a href="#!">발칸</a></li>
+                                <li><a href="#!">북유럽</a></li>
+                                <li><a href="#!">러시아/발트</a></li>
+                                <li><a href="#!">지중해</a></li>
+                                <li><a href="#">중동/코카서스/아프리카</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">1개국투어</a></li>
+                                <li><a href="#!">비즈니스패키지</a></li>
+                                <li><a href="#!">현지투어상품</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs1_01-->
+
+                    <input type="checkbox" id="mobile1_02">
+                    <label for="mobile1_02" class="mobile1_label02 label_style">하와이/미주/중남미</label>
+                    <div class="tabs1_02 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#">하와이</a></li>
+                                <li><a href="#!">미서부</a></li>
+                                <li><a href="#!">미동부</a></li>
+                                <li><a href="#!">캐나다 서부</a></li>
+                                <li><a href="#!">캐나다 동부</a></li>
+                                <li><a href="#!">중남미</a></li>
+                                <li><a href="#">알래스카</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">실시간특가</a></li>
+                                <li><a href="#!">2인출발</a></li>
+                                <li><a href="#!">비즈니스석 탑승</a></li>
+                                <li><a href="#!">허니문</a></li>
+                                <li><a href="#!">어린이동반가족</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs1_02-->
+
+                    <input type="checkbox" id="mobile1_03">
+                    <label for="mobile1_03" class="mobile1_label03 label_style">동남아</label>
+                    <div class="tabs1_03 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#">베트남</a></li>
+                                <li><a href="#!">태국</a></li>
+                                <li><a href="#!">필리핀</a></li>
+                                <li><a href="#!">라오스</a></li>
+                                <li><a href="#!">인도네시아/말레이시아</a></li>
+                                <li><a href="#!">싱가포르/브루나이</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">4인출발 가능</a></li>
+                                <li><a href="#!">크루즈 탑승 상품</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs1_03-->
+
+                    <input type="checkbox" id="mobile1_04">
+                    <label for="mobile1_04" class="mobile1_label04 label_style">일본</label>
+                    <div class="tabs1_04 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#">큐슈</a></li>
+                                <li><a href="#!">오사카</a></li>
+                                <li><a href="#!">북해도</a></li>
+                                <li><a href="#!">혼슈</a></li>
+                                <li><a href="#!">도쿄</a></li>
+                                <li><a href="#!">오키나와</a></li>
+                                <li><a href="#!">동북지방</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">료칸</a></li>
+                                <li><a href="#!">온천</a></li>
+                                <li><a href="#!">트레킹/기차여행</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs1_04-->
+
+                    <input type="checkbox" id="mobile1_05">
+                    <label for="mobile1_05" class="mobile1_label05 label_style">중국/대만/홍콩/몽골</label>
+                    <div class="tabs1_05 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#">대만</a></li>
+                                <li><a href="#!">중국</a></li>
+                                <li><a href="#!">홍콩/마카오</a></li>
+                                <li><a href="#!">몽골</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">출발확정</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs1_05-->
+
+                    <input type="checkbox" id="mobile1_06">
+                    <label for="mobile1_06" class="mobile1_label06 label_style">괌/사이판/남태평양</label>
+                    <div class="tabs1_06 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#">괌</a></li>
+                                <li><a href="#!">사이판</a></li>
+                                <li><a href="#!">호주</a></li>
+                                <li><a href="#!">뉴질랜드</a></li>
+                                <li><a href="#!">호주/뉴질랜드 연계</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">실시간 특가</a></li>
+                                <li><a href="#!">호캉스</a></li>
+                                <li><a href="#!">허니문</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs1_06-->
+
+                    <input type="checkbox" id="mobile1_07">
+                    <label for="mobile1_07" class="mobile1_label07 label_style">대구출발</label>
+                    <div class="tabs1_07 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#">일본</a></li>
+                                <li><a href="#!">중국/대만/홍콩</a></li>
+                                <li><a href="#!">동남아</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">한정특가</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs1_07-->
+
+                    <input type="checkbox" id="mobile1_08">
+                    <label for="mobile1_08" class="mobile1_label08 label_style">부산출발</label>
+                    <div class="tabs1_08 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#">일본</a></li>
+                                <li><a href="#!">중국/대만/홍콩</a></li>
+                                <li><a href="#!">동남아</a></li>
+                                <li><a href="#!">괌/사이판</a></li>
+                                <li><a href="#!">미주/하와이</a></li>
+                                <li><a href="#!">유럽</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">한정특가</a></li>
+                                <li><a href="#!">2인출발 보장</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div> <!--tab_menu1-->
+
+                <input type="checkbox" id="mobile2">
+                <label for="mobile2" class="mobile2_label mobile_style">마일리지투어</label>
+                <div class="tab_menu2 tab_menu">
+                    <input type="checkbox" id="mobile2_01">
+                    <label for="mobile2_01" class="mobile2_label01 label_style">국내</label>
+                    <div class="tabs2_01 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#!">제주</a></li>
+                                <li><a href="#!">내륙</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>인기상품</h4>
+                            <ul>
+                                <li><a href="#!">[서울마일리지호텔]롯데호텔 1박</a></li>
+                                <li><a href="#!">[제주 마일리지 호텔]라마다프라자 호텔 1박</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs2_01-->
+
+                    <input type="checkbox" id="mobile2_02">
+                    <label for="mobile2_02" class="mobile2_label02 label_style">해외</label>
+                    <div class="tabs2_02 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#!">괌/사이판/남태평양</a></li>
+                                <li><a href="#!">미주/하와이</a></li>
+                                <li><a href="#!">동남아</a></li>
+                                <li><a href="#!">일본</a></li>
+                                <li><a href="#!">중국/대만/홍콩</a></li>
+                                <li><a href="#!">유럽/중동</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>인기상품</h4>
+                            <ul>
+                                <li><a href="#!">[마일리지호캉스]더츠바키타워 1박</a></li>
+                                <li><a href="#!">[마일리지호캉스]힐튼 괌 1박</a></li>
+                            </ul>
+                        </div> 
+                    </div> <!--tabs2_02-->
+
+                </div> <!--tab_menu2-->
+
+                <input type="checkbox" id="mobile3">
+                <label for="mobile3" class="mobile3_label mobile_style">전세기</label>
+                <div class="tab_menu3 tab_menu">
+                    <input type="checkbox" id="mobile3_01">
+                    <label for="mobile3_01" class="mobile3_label01 label_style">유럽</label>
+                    <div class="tabs3_01 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#!">그리스[아테네]</a></li>
+                                <li><a href="#!">프랑스[남프랑스]</a></li>
+                                <li><a href="#!">이탈리아[돌로미티]</a></li>
+                                <li><a href="#!">북유럽[노르웨이]</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs3_01-->
+
+                    <input type="checkbox" id="mobile3_02">
+                    <label for="mobile3_02" class="mobile3_label02 label_style">일본</label>
+                    <div class="tabs3_02 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#!">가고시나</a></li>
+                                <li><a href="#!">북해도[삿포로]</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs3_02-->
+
+                    <input type="checkbox" id="mobile3_03">
+                    <label for="mobile3_03" class="mobile3_label03 label_style">베트남</label>
+                    <div class="tabs3_03 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#!">달랏</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs3_03-->
+
+                </div> <!--tab_menu3-->
+
+                <input type="checkbox" id="mobile4">
+                <label for="mobile4" class="mobile4_label mobile_style">크루즈</label>
+                <div class="tab_menu4 tab_menu">
+                    
+                    <input type="checkbox" id="mobile4_01">
+                    <label for="mobile4_01" class="mobile4_label01 label_style">유럽</label>
+                    <div class="tabs4_01 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#!">지중해</a></li>
+                                <li><a href="#!">북유럽</a></li>
+                                <li><a href="#!">아이슬란드/그린란드</a></li>
+                                <li><a href="#!">북극</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">출발확정</a></li>
+                                <li><a href="#!">비즈니스 패키지</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs4_01-->
+
+                    <input type="checkbox" id="mobile4_02">
+                    <label for="mobile4_02" class="mobile4_label02 label_style">미주</label>
+                    <div class="tabs4_02 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#!">알래스카</a></li>
+                                <li><a href="#!">중남미</a></li>
+                                <li><a href="#!">하와이</a></li>
+                                <li><a href="#!">캐나다/미서부</a></li>
+                                <li><a href="#!">카리브해/쿠바</a></li>
+                                <li><a href="#!">남극</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">출발확정</a></li>
+                                <li><a href="#!">비즈니스 패키지</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs4_02-->
+
+                    <input type="checkbox" id="mobile4_03">
+                    <label for="mobile4_03" class="mobile4_label03 label_style">아시아</label>
+                    <div class="tabs4_03 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#!">일본</a></li>
+                                <li><a href="#!">대만/홍콩</a></li>
+                                <li><a href="#!">싱가포르</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">출발확정</a></li>
+                                <li><a href="#!">비즈니스 패키지</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs4_03-->
+
+                    <input type="checkbox" id="mobile4_04">
+                    <label for="mobile4_04" class="mobile4_label04 label_style">호주/뉴질랜드</label>
+                    <div class="tabs4_04 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#!">호주/뉴질랜드</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">출발확정</a></li>
+                                <li><a href="#!">비즈니스 패키지</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs4_04-->
+
+                    <input type="checkbox" id="mobile4_05">
+                    <label for="mobile4_05" class="mobile4_label05 label_style">남미</label>
+                    <div class="tabs4_05 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#!">아프리카/중동</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">출발확정</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs4_05-->
+
+                </div> <!--tab_menu4-->
+
+                <input type="checkbox" id="mobile5">
+                <label for="mobile5" class="mobile5_label mobile_style">골프</label>
+                <div class="tab_menu5 tab_menu">
+                    
+                    <input type="checkbox" id="mobile5_01">
+                    <label for="mobile5_01" class="mobile5_label01 label_style">동남아시아</label>
+                    <div class="tabs5_01 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#!">태국</a></li>
+                                <li><a href="#!">베트남/캄보디아</a></li>
+                                <li><a href="#!">필리핀</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">2인라운드</a></li>
+                                <li><a href="#!">비즈니스석 이용</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs5_01-->
+
+                    <input type="checkbox" id="mobile5_02">
+                    <label for="mobile5_02" class="mobile5_label02 label_style">일본</label>
+                    <div class="tabs5_02 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#!">북해도</a></li>
+                                <li><a href="#!">혼슈</a></li>
+                                <li><a href="#!">도쿄/오사카</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">골프전세기</a></li>
+                                <li><a href="#!">다색(3색)골프</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs5_02-->
+
+                    <input type="checkbox" id="mobile5_03">
+                    <label for="mobile5_03" class="mobile5_label03 label_style">남태평양</label>
+                    <div class="tabs5_03 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#!">괌</a></li>
+                                <li><a href="#!">사이판</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">무제한골프</a></li>
+                                <li><a href="#!">골프/휴양</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs5_03-->
+
+                </div> <!--tab_menu5-->
+
+                <input type="checkbox" id="mobile6">
+                <label for="mobile6" class="mobile6_label mobile_style">국내</label>
+                <div class="tab_menu6 tab_menu">
+                    <input type="checkbox" id="mobile6_01">
+                    <label for="mobile6_01" class="mobile6_label01 label_style">제주</label>
+                    <div class="tabs6_01 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#!">제주</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">숙박/렌터카</a></li>
+                                <li><a href="#!">패키지여행</a></li>
+                                <li><a href="#!">지방출발</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs6_01-->
+
+                    <input type="checkbox" id="mobile6_02">
+                    <label for="mobile6_02" class="mobile6_label02 label_style">내륙</label>
+                    <div class="tabs6_02 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#!">내륙/섬</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">항공 결합 패키지</a></li>
+                                <li><a href="#!">기차여행</a></li>
+                                <li><a href="#!">섬여행</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs6_02-->
+
+                </div> <!--tab_menu6-->
+
+                <input type="checkbox" id="mobile7">
+                <label for="mobile7" class="mobile7_label mobile_style">자유여행</label>
+                <div class="tab_menu7 tab_menu">
+                    <input type="checkbox" id="mobile7_01">
+                    <label for="mobile7_01" class="mobile7_label01 label_style">일본</label>
+                    <div class="tabs7_01 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#!">도쿄.오사카</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">호캉스</a></li>
+                                <li><a href="#!">비즈니스  호텔</a></li>
+                                <li><a href="#!">지방출발</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs7_01-->
+
+                    <input type="checkbox" id="mobile7_02">
+                    <label for="mobile7_02" class="mobile7_label02 label_style">동남아시아</label>
+                    <div class="tabs7_02 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#!">싱가포르</a></li>
+                                <li><a href="#!">인도네시아</a></li>
+                                <li><a href="#!">베트남</a></li>
+                                <li><a href="#!">필리핀</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">럭셔리호캉스</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs7_02-->
+
+                    <input type="checkbox" id="mobile7_03">
+                    <label for="mobile7_03" class="mobile7_label03 label_style">미주</label>
+                    <div class="tabs7_03 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#!">하와이</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">에어텔</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs7_03-->
+
+                    <input type="checkbox" id="mobile7_04">
+                    <label for="mobile7_04" class="mobile7_label04 label_style">유럽</label>
+                    <div class="tabs7_04 tabs">
+                        <div class="list01">
+                            <h4>지역별</h4>
+                            <ul>
+                                <li><a href="#!">유럽</a></li>
+                            </ul>
+                        </div>
+                        <div class="list02">
+                            <h4>테마별</h4>
+                            <ul>
+                                <li><a href="#!">위메이드</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--tabs7_04-->
+
+                </div>
+
+
+                <input type="checkbox" id="mobile8">
+                <label for="mobile8" class="mobile8_label mobile_style">항공</label>
+                <input type="checkbox" id="mobile9">
+                <label for="mobile9" class="mobile9_label mobile_style">호텔</label>
+                    
+                <div class="mobile_menu_bar">
+                    <div class="bar1">
+                        <img src="./img/mymenu_icon.png" alt="mymenu_icon">
+                        <p>마이메뉴</p>
+                    </div>
+                    <div class="bar2">
+                        <img src="./img/reservation_icon.png" alt="clipboard">
+                        <p>예약내역</p>
+                    </div>
+                    <div class="bar3">
+                        <img src="./img/heart_icon.png" alt="mymenu_icon">
+                        <p>관심상품</p>
+                    </div>
+                    <div class="bar4">
+                        <img src="./img/icon_m_special.png" alt="mymenu_icon">
+                        <p>기획전</p>
+                    </div>
+                    <div class="bar5">
+                        <img src="./img/icon_m_linquriy.png" alt="mymenu_icon">
+                        <p>상품평</p>
+                    </div>
+                </div>
+
+
+
+
+            </div> <!--mobile_menu_area-->
+       </div>
+
+       
+     </header> <!--header-->
+
+
+     <div class="menu_area_T" id="header_w">
+        <div class="gnb_area_W">
+            <div class="gnb_box">
+                <ul>
+                    <li>로그인</li>
+                    <li>회원가입</li>
+                    <li>고객센터</li>
+                </ul>
+            </div> <!--gnb_box-->
+        </div> <!--gnb_area_W-->
+
+        <div class="logo_ex_T">
+            <div class="ham_menuT">
+                <div class="ham_menuT_btn">
+                    <div class="ham_menuT_open"><img src="./img/ham_icon.png" alt="ham_icon"></div>
+                    <div class="ham_menuT_close"><img src="./img/ham_icon.png" alt="ham_icon"></div>
+                </div>
+                <div class="ham_menu_wrap">
+                    <ul>
+                        <li class="on">패키지여행</li>
+                        <li>마일리지투어</li>
+                        <li>전세기</li>
+                        <li>크루즈</li>
+                        <li>골프</li>
+                        <li>국내여행</li>
+                        <li>자유여행</li>
+                        <li>항공/호텔</li>
+                    </ul>
+                    <div class="tab_menuT">
+                        <div id=menu_tab01 class="menu_on">
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">유럽/아프리카</a></li>
+                                <li ><a class="blue_txt" href="./sub_page/sub_page.html">서유럽</a></li>
+                                <li><a href="#!">동유럽</a></li>
+                                <li><a href="#!">발칸</a></li>
+                                <li><a href="#!">북유럽</a></li>
+                                <li><a href="#!">러시아/발트</a></li>
+                                <li><a href="#!">지중해</a></li>
+                                <li><a href="#!">중동/코카서스/아프리카</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">하와이/미주/중남미</a></li>
+                                <li><a href="#!">하와이</a></li>
+                                <li><a href="#!">미서부</a></li>
+                                <li><a href="#!">미동부</a></li>
+                                <li><a href="#!">캐나다 서부</a></li>
+                                <li><a href="#!">캐나다 동부</a></li>
+                                <li><a href="#!">중남미</a></li>
+                                <li><a href="#!">알래스카</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">동남아</a></li>
+                                <li><a href="#!">베트남</a></li>
+                                <li><a href="#!">태국</a></li>
+                                <li><a href="#!">필리핀</a></li>
+                                <li><a href="#!">라오스</a></li>
+                                <li><a href="#!">인도네시아/말레이시아</a></li>
+                                <li><a href="#!">싱가포르/브루나이</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">일본</a></li>
+                                <li><a href="#!">큐슈</a></li>
+                                <li><a href="#!">오사카</a></li>
+                                <li><a href="#!">북해도</a></li>
+                                <li><a href="#!">혼슈/도쿄</a></li>
+                                <li><a href="#!">오키나와</a></li>
+                                <li><a href="#!">동북지방</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">중국/대만/홍콩/몽골</a></li>
+                                <li><a href="#!">대만</a></li>
+                                <li><a href="#!">중국</a></li>
+                                <li><a href="#!">홍콩/마카오</a></li>
+                                <li><a href="#!">몽골</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">괌/사이판/남태평양</a></li>
+                                <li><a href="#!">괌</a></li>
+                                <li><a href="#!">사이판</a></li>
+                                <li><a href="#!">호주</a></li>
+                                <li><a href="#!">뉴질랜드</a></li>
+                                <li><a href="#!">호주/뉴질랜드연계</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">부산출발</a></li>
+                                <li><a href="#!">일본</a></li>
+                                <li><a href="#!">중국/대만/홍콩</a></li>
+                                <li><a href="#!">동남아</a></li>
+                                <li><a href="#!">괌/사이판</a></li>
+                                <li><a href="#!">미주/하와이</a></li>
+                                <li><a href="#!">유럽</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">대구출발</a></li>
+                                <li><a href="#!">일본</a></li>
+                                <li><a href="#!">중국/대만/홍콩</a></li>
+                                <li><a href="#!">동남아</a></li>
+                            </ul>
+                        </div>
+                        <div id=menu_tab02>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">국내</a></li>
+                                <li><a href="#!">제주</a></li>
+                                <li><a href="#!">내륙</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">해외</a></li>
+                                <li><a href="#!">괌/사이판/남태평양</a></li>
+                                <li><a href="#!">미주/하와이</a></li>
+                                <li><a href="#!">동남아</a></li>
+                                <li><a href="#!">일본</a></li>
+                                <li><a href="#!">중국/대만/홍콩</a></li>
+                                <li><a href="#!">유럽/중동</a></li>
+                            </ul>
+                        </div>
+                        <div id=menu_tab03>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">유럽</a></li>
+                                <li><a href="#!">그리스(아테네)</a></li>
+                                <li><a href="#!">프랑스(남프랑스)</a></li>
+                                <li><a href="#!">이탈리아(돌로미티)</a></li>
+                                <li><a href="#!">북유럽(노르웨이)</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">일본</a></li>
+                                <li><a href="#!">가고시마</a></li>
+                                <li><a href="#!">북해도</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">베트남</a></li>
+                                <li><a href="#!">달랏</a></li>
+                            </ul>
+                        </div>
+                        <div id=menu_tab04>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">유럽</a></li>
+                                <li><a href="#!">지중해</a></li>
+                                <li><a href="#!">북유럽</a></li>
+                                <li><a href="#!">아이슬란드/그린란드</a></li>
+                                <li><a href="#!">북극</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">미주</a></li>
+                                <li><a href="#!">알래스카</a></li>
+                                <li><a href="#!">중남미</a></li>
+                                <li><a href="#!">하와이</a></li>
+                                <li><a href="#!">캐나다/미서부</a></li>
+                                <li><a href="#!">카리브해/쿠바</a></li>
+                                <li><a href="#!">남극</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">아시아</a></li>
+                                <li><a href="#!">일본</a></li>
+                                <li><a href="#!">대만/홍콩</a></li>
+                                <li><a href="#!">싱가포르</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">호주/뉴질랜드</a></li>
+                                <li><a href="#!">호주/뉴질랜드</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">남미</a></li>
+                                <li><a href="#!">아프리카/중동</a></li>
+                            </ul>
+                        </div>
+                        <div id=menu_tab05>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">동남아시아</a></li>
+                                <li><a href="#!">태국</a></li>
+                                <li><a href="#!">베트남/캄보디아</a></li>
+                                <li><a href="#!">필리핀</a></li>
+                                <li><a href="#!">인도네시아/말레이시아</a></li>
+                                <li><a href="#!">싱가포르/브루나이</a></li>
+                                <li><a href="#!">라오스/미얀마</a></li>
+                            </ul> 
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">일본</a></li>
+                                <li><a href="#!">북해도</a></li>
+                                <li><a href="#!">혼슈</a></li>
+                                <li><a href="#!">도쿄/오사카</a></li>
+                                <li><a href="#!">규슈</a></li>
+                                <li><a href="#!">오키나와</a></li>
+                            </ul> 
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">중국/대만</a></li>
+                                <li><a href="#!">중국</a></li>
+                                <li><a href="#!">대만</a></li>
+                            </ul> 
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">남태평양</a></li>
+                                <li><a href="#!">괌</a></li>
+                                <li><a href="#!">사이판</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">미주/하와이</a></li>
+                                <li><a href="#!">하와이</a></li>
+                                <li><a href="#!">미서부/미동부</a></li>
+                                <li><a href="#!">캐나다</a></li>
+                            </ul>  
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">유럽/중동</a></li>
+                                <li><a href="#!">중동</a></li>
+                                <li><a href="#!">유럽</a></li>
+                            </ul> 
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">부산출발</a></li>
+                                <li><a href="#!">동남아</a></li>
+                            </ul>  
+                        </div>
+                        <div id=menu_tab06>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">제주</a></li>
+                                <li><a href="#!">제주</a></li>
+                            </ul> 
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">내륙/섬</a></li>
+                                <li><a href="#!">내륙/섬</a></li>
+                            </ul> 
+                        </div>
+                        <div id=menu_tab07>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">일본</a></li>
+                                <li><a href="#!">도쿄/오사카</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">동남아시아</a></li>
+                                <li><a href="#!">싱가포르</a></li>
+                                <li><a href="#!">인도네시아</a></li>
+                                <li><a href="#!">베트남</a></li>
+                                <li><a href="#!">필리핀</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">미주</a></li>
+                                <li><a href="#!">하와이</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">유럽</a></li>
+                                <li><a href="#!">유럽</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">괌/사이판</a></li>
+                                <li><a href="#!">괌</a></li>
+                                <li><a href="#!">사이판</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">부산출발</a></li>
+                                <li><a href="#!">일본</a></li>
+                                <li><a href="#!">중국/대만/홍콩</a></li>
+                                <li><a href="#!">동남아</a></li>
+                                <li><a href="#!">괌/사이판</a></li>
+                            </ul>
+                        </div>
+                        <div id=menu_tab08>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">항공</a></li>
+                                <li><a href="#!">항공권 검색</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">호텔</a></li>
+                                <li><a href="#!">호텔 검색</a></li>
+                            </ul>
+                            <ul>
+                                <li class="tab_menuT_tit"><a href="#!">렌트카</a></li>
+                                <li><a href="#!">차량 렌트 검색</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo_box">
+                <a href="./index.html"><img src="./img/logo.png" alt="logo_img"></a>
+            </div>
+            <div class="search_border_area">
+                <div class="search_border_box">
+                    <input type="text">
+                    <img src="./img/icon_searchbar.png" alt="icon_search">
+                </div>
+            </div> <!--logo_ex_T-->
+
+            <div class="submenu_icon_area">
+                <div class="submenu_icon_box01 submenu_icon_box">
+                    <div class="submenu_icon_img">
+                        <img src="./img/mymenu_icon.png" alt="mymenu_icon">
+                    </div>
+                    <div class="submenu_txt">
+                        <p>마이메뉴</p>
+                    </div>
+                </div> <!--submenu_icon_box01-->
+
+                <div class="submenu_icon_box02 submenu_icon_box">
+                    <div class="submenu_icon_img">
+                        <img src="./img/reservation_icon.png" alt="reservation_icon">
+                    </div>
+                    <div class="submenu_txt">
+                        <p>예약내역</p>
+                    </div>
+                </div> <!--submenu_icon_box02-->
+
+                <div class="submenu_icon_box03 submenu_icon_box">
+                    <div class="submenu_icon_img">
+                        <img src="./img/heart_icon.png" alt="heart_icon">
+                    </div>
+                    <div class="submenu_txt">
+                        <p>관심내역</p>
+                    </div>
+                </div> <!--submenu_icon_box03-->
+
+            </div> <!--submenu_icon_area-->
+        </div> <!--logo_ex_T-->
+
+
+    </div> <!--menu_area_T-->
+
+    <nav class="main_menu">
+        <div class="wrap_menu">
+            <div class="web_ham">
+                    <div class="btn_open btn"><img src="./img/ham_icon.png" alt="ham_icon">전체메뉴</div>
+                    <div class="btn_close btn"><img src="./img/ham_icon.png" alt="ham_icon">전체메뉴</div>
+        
+                    <div class="list_menu">
+                        <div class="list_menu01">
+                            <ul>
+                                <li class="list_menu_tit"><a href="#!">패키지여행</a></li>
+                                <li class="blue_txt"><a href="./sub_page/sub_page.html">유럽/아프리카</a></li>
+                                <li><a href="#!">하와이/미주/중남미</a></li>
+                                <li><a href="#!">동남아</a></li>
+                                <li><a href="#!">일본</a></li>
+                                <li><a href="#!">중국/대만/홍콩/몽골</a></li>
+                                <li><a href="#!">괌/사이판/남태평양</a></li>
+                                <li><a href="#!">부산출발</a></li>
+                                <li><a href="#!">대구출발</a></li>
+                            </ul>
+                            <ul>
+                                <li class="list_menu_tit"><a href="#!">마일리지투어</a></li>
+                                <li><a href="#!">국내</a></li>
+                                <li><a href="#!">해외</a></li>
+                            </ul>
+                            <ul>
+                                <li class="list_menu_tit"><a href="#!">전세기</a></li>
+                                <li><a href="#!">유럽</a></li>
+                                <li><a href="#!">일본</a></li>
+                                <li><a href="#!">베트남</a></li>
+                            </ul>
+                            <ul>
+                                <li class="list_menu_tit"><a href="#!">크루즈</a></li>
+                                <li><a href="#!">유럽</a></li>
+                                <li><a href="#!">미주</a></li>
+                                <li><a href="#!">아시아</a></li>
+                                <li><a href="#!">호주/뉴질랜드</a></li>
+                                <li><a href="#!">남미</a></li>
+                            </ul>
+                            <ul>
+                                <li class="list_menu_tit"><a href="#!">골프</a></li>
+                                <li><a href="#!">동남아시아</a></li>
+                                <li><a href="#!">일본</a></li>
+                                <li><a href="#!">중국/대만</a></li>
+                                <li><a href="#!">남태평양</a></li>
+                                <li><a href="#!">미주/하와이</a></li>
+                                <li><a href="#!">유럽/중동</a></li>
+                            </ul>
+                        </div> <!--list_menu01-->
+                         <div class="list_menu02">
+                            <ul>
+                                <li class="list_menu_tit"><a href="#!">국내여행</a></li>
+                                <li><a href="#!">제주</a></li>
+                                <li><a href="#!">내륙/섬</a></li>
+                            </ul>
+                            <ul>
+                                <li class="list_menu_tit"><a href="#!">자유여행</a></li>
+                                <li><a href="#!">일본</a></li>
+                                <li><a href="#!">동남아시아</a></li>
+                                <li><a href="#!">미주</a></li>
+                                <li><a href="#!">유럽</a></li>
+                                <li><a href="#!">괌/사이판</a></li>
+                                <li><a href="#!">부산출발</a></li>
+                            </ul>
+                            <ul>
+                                <li class="list_menu_tit"><a href="#!">항공</a></li>
+                                <li><a href="#!">항공권 검색</a></li>
+                            </ul>
+                            <ul>
+                                <li class="list_menu_tit"><a href="#!">호텔</a></li>
+                                <li><a href="#!">호텔 검색</a></li>
+                            </ul>
+                        </div> <!--list_menu02-->   
+                    </div> <!--list_menu-->
+            </div> <!--web_ham-->
+            <ul class="lnb_04">
+                <li class="menu01 menu_list">
+                    <a class="route_txt" href="#">패키지여행</a>
+                    <div class="down_menu01 down_menu">
+                        <ul>
+                            <li  class="on01"><a class="route_txt" href="#!">유럽/아프리카</a></li>
+                            <li><a href="#">하와이/미주/중남미</a></li>
+                            <li><a href="#">동남아</a></li>
+                            <li><a href="#">일본</a></li>
+                            <li><a href="#">중국/대만/홍콩/몽골</a></li>
+                            <li><a href="#">괌/사이판/남태평양</a></li>
+                            <li><a href="#">부산출발</a></li>
+                            <li><a href="#">대구출발</a></li>
+                        </ul>
+                        <div class="menu_tab">
+                            <div id="down_menu1_01" class="sheet_on01">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>패키지 여행</h3>
+                                        <h4>유럽/아프리카</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/비즈니스패키지_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="./sub_page/sub_page.html" class="blue_txt">서유럽</a></li>
+                                                <li><a href="#!">동유럽</a></li>
+                                                <li><a href="#!">발칸</a></li>
+                                                <li><a href="#!">북유럽</a></li>
+                                                <li><a href="#!">러시아/발트</a></li>
+                                                <li><a href="#!">지중해</a></li>
+                                                <li><a href="#!">중동/코카서스/아프리카</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">위메이드</a></li>
+                                                <li><a href="#!">1개국투어</a></li>
+                                                <li><a href="#!">비즈니스 패키지</a></li>
+                                                <li><a href="#!">현지투어 상품</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">시간이 멈춘 동유럽 3개국 9일<br>[체코/오스트리아/헝가리]<br>특급 5박/5대 문화체험 + 야경 </a></li>
+                                                <li><a href="#!">북유럽 4개국[덴/핀/스/노] 9일 크루즈 DeLuxe+특급2박+피오르뷰호텔 </a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div>
+                            
+                            <div id="down_menu1_02">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>패키지 여행</h3>
+                                        <h4>하와이/미주/중남미</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/비즈니스패키지_02.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">하와이</a></li>
+                                                <li><a href="#!">미서부</a></li>
+                                                <li><a href="#!">미동부</a></li>
+                                                <li><a href="#!">캐나다 서부</a></li>
+                                                <li><a href="#!">캐나다 동부</a></li>
+                                                <li><a href="#!">중남미</a></li>
+                                                <li><a href="#!">알래스카</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">실시간특가</a></li>
+                                                <li><a href="#!">2인출발</a></li>
+                                                <li><a href="#!">비즈니스석 탑승</a></li>
+                                                <li><a href="#!">허니문</a></li>
+                                                <li><a href="#!">어린이동반가족</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">[스테디셀러]<br/>와이키키리조트 하와이 에어텔 6/7일</a></li>
+                                                <li><a href="#!">특급 하약트리젠시와이키키 하와이 에어텔 6/7일</a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div>
+                            <div id="down_menu1_03">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>패키지 여행</h3>
+                                        <h4>동남아</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/비즈니스패키지_03.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">베트남</a></li>
+                                                <li><a href="#!">태국</a></li>
+                                                <li><a href="#!">필리핀</a></li>
+                                                <li><a href="#!">라오스</a></li>
+                                                <li><a href="#!">인도네시아/말레이시아</a></li>
+                                                <li><a href="#!">싱가포르/브루나이/인도</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">4인출발 가능</a></li>
+                                                <li><a href="#!">크루즈 탑승 상품</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">[정통]베트남 하노이+하롱베이+옌뜨 5일 KE</a></li>
+                                                <li><a href="#!">[대한항공/4인부터 출발]다낭/후에/호이안<br/>#특급호텔3박#맛집투어4일</a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div>
+                            <div id="down_menu1_04">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>패키지 여행</h3>
+                                        <h4>일본</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/비즈니스패키지_04.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">큐슈</a></li>
+                                                <li><a href="#!">오사카</a></li>
+                                                <li><a href="#!">북해도</a></li>
+                                                <li><a href="#!">혼슈/도쿄</a></li>
+                                                <li><a href="#!">오키나와</a></li>
+                                                <li><a href="#!">동북지방</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">료칸</a></li>
+                                                <li><a href="#!">온천</a></li>
+                                                <li><a href="#!">트레킹/기차여행</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">[품격]북해도로 떠나는 가장 행복한 여행 4일#최상의 호텔과 온천#맛있는 식사 ALL 포함</a></li>
+                                                <li><a href="#!">[큐슈 SPECIAL] 유후인, 벳부로 떠나는 온천의 여유 북큐슈 따숨 4일#히젠야료칸호텔#특급호텔</a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div>
+                            <div id="down_menu1_05">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>패키지 여행</h3>
+                                        <h4>중국/대만/홍콩/몽골</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/비즈니스패키지_05.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">대만</a></li>
+                                                <li><a href="#!">중국</a></li>
+                                                <li><a href="#!">홍콩/마카오</a></li>
+                                                <li><a href="#!">몽골</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">위메이드</a></li>
+                                                <li><a href="#!">1개국투어</a></li>
+                                                <li><a href="#!">비즈니스 패키지</a></li>
+                                                <li><a href="#!">현지투어 상품</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">[연휴기간좌석확보]홍콩/마카오 4일#선착순10명#조기마감주의#베스트셀러</a></li>
+                                                <li><a href="#!">대만 타이베이와 화련까지 관광하는 필수코스로 구성된 3/4일#베스트셀러#101타워#화련일주</a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div>
+                            <div id="down_menu1_06">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>패키지 여행</h3>
+                                        <h4>괌/사이판/남태평양</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/비즈니스패키지_06.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">괌</a></li>
+                                                <li><a href="#!">사이판</a></li>
+                                                <li><a href="#!">호주</a></li>
+                                                <li><a href="#!">뉴질랜드</a></li>
+                                                <li><a href="#!">호주/뉴질랜드 연계</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">실시간 특가</a></li>
+                                                <li><a href="#!">1개국투어</a></li>
+                                                <li><a href="#!">비즈니스 패키지</a></li>
+                                                <li><a href="#!">현지투어 상품</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">베스트 오브 베스트 호주/뉴질랜드 남북섬 10일#타우포호수#송어낚시</a></li>
+                                                <li><a href="#!">괌 PIC 4/5일 #가족여행#골드카드#올인클루시브</a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div>
+                            <div id="down_menu1_07">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>패키지 여행</h3>
+                                        <h4>부산출발</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/비즈니스패키지_07.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">일본</a></li>
+                                                <li><a href="#!">중국/대만/홍콩</a></li>
+                                                <li><a href="#!">동남아</a></li>
+                                                <li><a href="#!">괌/사이판</a></li>
+                                                <li><a href="#!">미주/하와이</a></li>
+                                                <li><a href="#!">유럽</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">한정특가</a></li>
+                                                <li><a href="#!">2인출발 보장</a></li>
+                                                <li><a href="#!">비즈니스 패키지</a></li>
+                                                <li><a href="#!">현지투어 상품</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">하노이/하롱베이 5/6일 부 편안하게 즐기는 스탠다드 상품 #베스트셀러#가성비#실속있게</a></li>
+                                                <li><a href="#!">괌 4~6일 괌 최대 규모의 워터파크와 호텔 바로 앞에서 즐길 수 있는 다양한 해양스포츠를 통해 신나는 경험과 편안한 휴식을 동시에 취할 수 있는 이상적인 여행 패키지#리조나레리조트#괌최대워터파크</a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div>
+                            <div id="down_menu1_08">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>패키지 여행</h3>
+                                        <h4>대구출발</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/비즈니스패키지_08.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">일본</a></li>
+                                                <li><a href="#!">중국/대만/홍콩</a></li>
+                                                <li><a href="#!">동남아</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">한정특가</a></li>
+                                                <li><a href="#!">1개국투어</a></li>
+                                                <li><a href="#!">비즈니스 패키지</a></li>
+                                                <li><a href="#!">현지투어 상품</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">다낭/호이안 4~6일 다낭 초특가 프로모션 상품으로 다낭 핵심관광지 바나힐 테마파크, 호이안 올드타운 투어가 포함된 투어</a></li>
+                                                <li><a href="#!">규슈 추천온천여행 3~4일. 관광과 힐링, 두가지를 모두 만족시키는 투어#실속여행#핵심관광#온천여행 </a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div>
+                        </div>
+                    </div>
+                </li> <!--//menu01-->
+                <li  class="menu02 menu_list">
+                    <a href="#">마일리지투어</a>
+                    <div class="down_menu02 down_menu">
+                        <ul>
+                            <li class="on02"><a href="#!">국내</a></li>
+                            <li><a href="#!">해외</a></li>
+                        </ul>
+                        <div class="menu_tab">
+                            <div id="down_menu2_01" class="sheet_on02">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>마일리지투어</h3>
+                                        <h4>국내</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/마일리지투어_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">제주</a></li>
+                                                <li><a href="#!">내륙</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">비즈니스 패키지</a></li>
+                                                <li><a href="#!">국내 테마여행</a></li>
+                                                <li><a href="#!">제주 호캉스</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">[서울 마일리지 호텔] 롯데호텔(메인타워) 1박</a></li>
+                                                <li><a href="#!">[제주 마일리지 호텔] 라마다 프라자 호텔 1박(바다전망) + 2인 조식</a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu2_01-->
+                            <div id="down_menu2_02">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>마일리지투어</h3>
+                                        <h4>해외</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/마일리지투어_02.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">괌/사이판/남태평양</a></li>
+                                                <li><a href="#!">미주/하와이</a></li>
+                                                <li><a href="#!">동남아</a></li>
+                                                <li><a href="#!">일본</a></li>
+                                                <li><a href="#!">중국/대만/홍콩</a></li>
+                                                <li><a href="#!">유럽/중동</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">위메이드</a></li>
+                                                <li><a href="#!">1개국투어</a></li>
+                                                <li><a href="#!">비즈니스 패키지</a></li>
+                                                <li><a href="#!">현지투어 상품</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">[마일리지호캉스]독일 품격 일주, 프리미엄 고성호텔숙박#특식#독일일주</a></li>
+                                                <li><a href="#!">괌 하얏트리젠시호텔 호캉스#품격있는특급호텔#조경</a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu2_02-->
+                        </div>
+                    </div>
+                </li> <!--//menu02-->
+                <li class="menu03 menu_list">
+                    <a href="#">전세기</a>
+                    <div class="down_menu03 down_menu">
+                        <ul>
+                            <li class="on03"><a href="#!">유럽</a></li>
+                            <li><a href="#!">일본</a></li>
+                            <li><a href="#!">베트남</a></li>
+                        </ul>
+                        <div class="menu_tab">
+                            <div id="down_menu3_01" class="sheet_on03">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>전세기</h3>
+                                        <h4>유럽</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/전세기_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">그리스(아테네)</a></li>
+                                                <li><a href="#!">프랑스(남프랑스)</a></li>
+                                                <li><a href="#!">이탈리아(돌로미티)</a></li>
+                                                <li><a href="#!">북유럽(노르웨이)</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            
+                                            
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                        
+                                            
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu2_01-->
+                            <div id="down_menu3_02" >
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>전세기</h3>
+                                        <h4>일본</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/전세기_02.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">가고시마</a></li>
+                                                <li><a href="#!">북해도(삿포로)</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                        
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu2_01-->
+                            <div id="down_menu3_03" class="sheet_on03">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>전세기</h3>
+                                        <h4>베트남</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/마일리지투어_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">달랏</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu2_01-->
+                            
+                            
+                        </div>
+                    </div>
+                </li> <!--//menu03-->
+                <li  class="menu04 menu_list">
+                    <a href="#">크루즈</a>
+                    <div class="down_menu04 down_menu">
+                        <ul>
+                            <li class="on04"><a href="#!">유럽</a></li>
+                            <li><a href="#!">미주</a></li>
+                            <li><a href="#!">아시아</a></li>
+                            <li><a href="#!">호쥬/뉴질랜드</a></li>
+                            <li><a href="#!">남미</a></li>
+                        </ul>
+                        <div class="menu_tab">
+                            <div id="down_menu4_01" class="sheet_on04">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>크루즈</h3>
+                                        <h4>유럽</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/크루즈_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">지중해</a></li>
+                                                <li><a href="#!">북유럽</a></li>
+                                                <li><a href="#!">아이슬란드/그린란드</a></li>
+                                                <li><a href="#!">북극</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">출발확정</a></li>
+                                                <li><a href="#!">비즈니스 패키지</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">[20만톤급, 발코니 UP]서부 지중해 4개국 크루즈 10일</a></li>
+                                                <li><a href="#!">[대한항공 직항, 발코니 UP] BEST 일정, 동부 지중해 10일</a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu4_01-->
+
+                            <div id="down_menu4_02">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>크루즈</h3>
+                                        <h4>미주</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/크루즈_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">알래스카</a></li>
+                                                <li><a href="#!">중남미</a></li>
+                                                <li><a href="#!">하와이</a></li>
+                                                <li><a href="#!">캐나다/미서부</a></li>
+                                                <li><a href="#!">카리브해/쿠바</a></li>
+                                                <li><a href="#!">남극</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">출발확정</a></li>
+                                                <li><a href="#!">비즈니스 패키지</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">[사전발권특가] 시애틀 승선 알래스카 크루즈 10일</a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu4_01-->
+
+                            <div id="down_menu4_03">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>크루즈</h3>
+                                        <h4>아시아</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/크루즈_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">일본</a></li>
+                                                <li><a href="#!">대만/홍콩</a></li>
+                                                <li><a href="#!">싱가포르</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">비즈니스 패키지</a></li>
+                                                <li><a href="#!">출발확정</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu4_03-->
+
+                            <div id="down_menu4_04">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>크루즈</h3>
+                                        <h4>호주/뉴질랜드</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/크루즈_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">호주/뉴질랜드</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">출발확정</a></li>
+                                                <li><a href="#!">비즈니스 패키지</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">[BEST 일정, 발코니 객실]대자연의 선물 호주 뉴질랜드 크루즈 16일</a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu4_04-->
+
+                            <div id="down_menu4_05">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>크루즈</h3>
+                                        <h4>남미</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/크루즈_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">아프리카/중동</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">비즈니스 패키지</a></li>
+                                                <li><a href="#!">출발확정</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">[사전발권특가] 시애틀 승선 알래스카 크루즈 10일</a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu4_05-->
+                            
+                        </div>
+                    </div>
+                </li> <!--//menu04-->
+
+                <li  class="menu05 menu_list">
+                    <a href="#">골프</a>
+                    <div class="down_menu05 down_menu">
+                        <ul>
+                            <li class="on05"><a href="#!">동남아시아</a></li>
+                            <li><a href="#!">일본</a></li>
+                            <li><a href="#!">중국/대만</a></li>
+                            <li><a href="#!">남태평양</a></li>
+                            <li><a href="#!">미주/하와이</a></li>
+                            <li><a href="#!">유럽/중동</a></li>
+                        </ul>
+                        <div class="menu_tab">
+                            <div id="down_menu5_01" class="sheet_on05">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>골프</h3>
+                                        <h4>동남아시아</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/골프_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">태국</a></li>
+                                                <li><a href="#!">베트남/캄보디아</a></li>
+                                                <li><a href="#!">필리핀</a></li>
+                                                <li><a href="#!">인도네시아/말레이시아</a></li>
+                                                <li><a href="#!">싱가포르/브루나이</a></li>
+                                                <li><a href="#!">라오스/미얀마</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">출발확정</a></li>
+                                                <li><a href="#!">2인 라운드</a></li>
+                                                <li><a href="#!">비즈니스석 이용</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">[파격특가]클락 바기오 파인우드 GC 무제한 골프 5일</a></li>
+                                                <li><a href="#!">[기획특가]치앙마이 알파인/하이랜드 골프 5일(시내호텔숙박)</a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu5_01-->
+
+                            <div id="down_menu5_02">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>골프</h3>
+                                        <h4>일본</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/골프_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">북해도</a></li>
+                                                <li><a href="#!">혼슈</a></li>
+                                                <li><a href="#!">도쿄/오사카</a></li>
+                                                <li><a href="#!">규슈</a></li>
+                                                <li><a href="#!">오키나와</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">골프전세기</a></li>
+                                                <li><a href="#!">다색(3색)골프</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">[진에어]북해도 힐튼 니세코 골프 4일(63홀)</a></li>
+                                                <li><a href="#!">[골프+자유일정]후쿠오카 골프 3일(한국인기사/전용차량)</a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu5_02-->
+
+                            <div id="down_menu5_03">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>골프</h3>
+                                        <h4>중국/대만</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/골프_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">중국</a></li>
+                                                <li><a href="#!">대만</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu5_03-->
+
+                            <div id="down_menu5_04">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>골프</h3>
+                                        <h4>남태평양</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/골프_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">괌</a></li>
+                                                <li><a href="#!">사이판</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">무제한골프</a></li>
+                                                <li><a href="#!">골프+휴양</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">[오후출발]사이판 코럴오션 리조트 골프 5일(54홀)</a></li>
+                                                <li><a href="#!">하와이 쉐라톤 와이키키 3색 골프 6일</a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu5_04-->
+
+                            <div id="down_menu5_05">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>골프</h3>
+                                        <h4>미주/하와이</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/골프_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">하와이</a></li>
+                                                <li><a href="#!">미서부</a></li>
+                                                <li><a href="#!">캐나다</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">다색(3색)골프</a></li>
+                                                <li><a href="#!">럭셔리 휴양 골프</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">하와이 와이키키비치 메리어트 3색 골프 6일</a></li>
+                                                <li><a href="#!">[골퍼들의 버킷리스트]페블비치 미서부 골프 투어 9일(페블비치 3박 숙박)</a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu5_05-->
+
+                            <div id="down_menu5_06">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>골프</h3>
+                                        <h4>유럽/중동</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/골프_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">중동</a></li>
+                                                <li><a href="#!">유럽</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">4인출발</a></li>
+                                                <li><a href="#!">세계 100대 골프</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">프랑스 하이브리드 골프 7일(골프와 노르망디&파리 근교투어)</a></li>
+                                                <li><a href="#!">[럭셔리골프]최고의 골프코스에서의 라운드! 두바이 4색 골프 7일(하루자유일정)</a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu5_05-->
+                            
+                        </div>
+                    </div>
+                </li> <!--//menu05-->
+
+                <li  class="menu06 menu_list">
+                    <a href="#">국내여행</a>
+                    <div class="down_menu06 down_menu">
+                        <ul>
+                            <li class="on06"><a href="#!">제주</a></li>
+                            <li><a href="#!">내륙/섬</a></li>
+                            
+                        </ul>
+                        <div class="menu_tab">
+                            <div id="down_menu6_01" class="sheet_on06">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>국내여행</h3>
+                                        <h4>제주</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/국내_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">제주</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">숙박+렌터카</a></li>
+                                                <li><a href="#!">항공+숙박+렌터카</a></li>
+                                                <li><a href="#!">항공+숙박</a></li>
+                                                <li><a href="#!">패키지 여행</a></li>
+                                                <li><a href="#!">지방출발</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">[제주 단체버스여행] NO팁! NO옵션! 섬in섬 제주여행 3일 : 마라도/우도/카멜리아힐</a></li>
+                                                <li><a href="#!">[제주 단체버스여행] NO팁!NO옵션! 알찬 제주여행 3일</a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu6_01-->
+
+                            <div id="down_menu6_02">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>국내여행</h3>
+                                        <h4>내륙/섬</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/국내_02.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">내륙/섬</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">항공 결합 패키지</a></li>
+                                                <li><a href="#!">기차여행</a></li>
+                                                <li><a href="#!">섬여행</a></li>
+                                                <li><a href="#!">한국기행</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu6_02-->
+
+                        </div>
+                    </div>
+                </li> <!--//menu06-->
+
+                <li  class="menu07 menu_list">
+                    <a href="#!">자유여행</a>
+                    <div class="down_menu07 down_menu">
+                        <ul>
+                            <li class="on07"><a href="#!">일본</a></li>
+                            <li><a href="#!">동남아시아</a></li>
+                            <li><a href="#!">미주</a></li>
+                            <li><a href="#!">유럽</a></li>
+                            <li><a href="#!">괌/사이판</a></li>
+                            <li><a href="#!">부산출발</a></li>
+                        </ul>
+                        <div class="menu_tab">
+                            <div id="down_menu7_01" class="sheet_on07">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>자유여행</h3>
+                                        <h4>일본</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/자유여행_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">도쿄/오사카</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">호캉스</a></li>
+                                                <li><a href="#!">비즈니스 호텔</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">[에어텔]대한항공 동경 자유여행 3일(비즈니스호텔)</a></li>
+                                                <li><a href="#!">도쿄 자유여행 3~5일 #항공+호텔#시내호텔숙박</a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu7_01-->
+                            <div id="down_menu7_02">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>자유여행</h3>
+                                        <h4>동남아시아</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/자유여행_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">싱가포르</a></li>
+                                                <li><a href="#!">인도네시아</a></li>
+                                                <li><a href="#!">베트남</a></li>
+                                                <li><a href="#!">필리핀</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">럭셔리 호캉스</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu7_02-->
+
+                            <div id="down_menu7_03">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>자유여행</h3>
+                                        <h4>미주</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/자유여행_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">하와이</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">출발확정</a></li>
+                                                <li><a href="#!">에어텔</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">[스테디셀러]와이키키리조트 하와이 에어텔 6/7일</a></li>
+                                                <li><a href="#!">[실시간항공]오션프론트 업그레이드, 특급 쉐라톤 와이키키 하와이 에어텔 6/7일</a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu7_03-->
+
+                            <div id="down_menu7_04">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>자유여행</h3>
+                                        <h4>유럽</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/자유여행_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">유럽</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">출발확정</a></li>
+                                                <li><a href="#!">2인 라운드</a></li>
+                                                <li><a href="#!">비즈니스석 이용</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu7_04-->
+
+                            <div id="down_menu7_05">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>자유여행</h3>
+                                        <h4>괌/사이판</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/자유여행_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">괌</a></li>
+                                                <li><a href="#!">사이판</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">출발확정</a></li>
+                                                <li><a href="#!">2인 라운드</a></li>
+                                                <li><a href="#!">호캉스</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                            <h4>인기상품</h4>
+                                            <ul>
+                                                <li><a href="#!">괌 PIC 4/5일 #가족여행#골드카드#올인클루시브</a></li>
+                                                <li><a href="#!">괌 츠바키 타워 카멜리아 클럽 4/5일#럭셔리신상호텔#6성급#클럽라운지</a></li>
+                                            </ul>
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu7_05-->
+
+                            <div id="down_menu7_06">
+                                <div class="down_menu_wrap">
+                                    <div class="menu_depth_left">
+                                        <h3>자유여행</h3>
+                                        <h4>부산출발</h4>
+                                        <span><a href="#!">바로가기</a></span>
+                                        <div class="menu_left_img">
+                                            <img src="./img/자유여행_01.jpg" alt="business_img">
+                                        </div>
+                                    </div>
+                                    <div class="menu_depth_right">
+                                        <div class="by_region">
+                                            <h4>지역별</h4>
+                                            <ul>
+                                                <li><a href="#!">일본</a></li>
+                                                <li><a href="#!">중국/대만/홍콩</a></li>
+                                                <li><a href="#!">동남아</a></li>
+                                                <li><a href="#!">괌/사이판</a></li>
+                                            </ul>
+                                        </div> <!--by_region-->
+                                        <div class="by_theme">
+                                            <h4>테마별</h4>
+                                            <ul>
+                                                <li><a href="#!">출발확정</a></li>
+                                                <li><a href="#!">호캉스</a></li>
+                                            </ul>
+                                        </div> <!--by_theme-->
+                                        <div class="menu_popular_item">
+                                        </div> <!--menu_popular_item-->
+                                    </div> <!--menu_depth_right-->
+                                </div> <!--down_menu_wrap-->
+                            </div> <!--down_menu7_06-->
+  
+                        </div> <!--menu_tab-->
+                    </div>
+                </li> <!--//menu07-->
+                <li  class="menu08 menu_list">
+                    <a href="https://air.kaltour.com/air/b2c/AIR/INT/AIRINTTRP0100100000.k1?KSESID=air:b2c:SELK138AF:SELK138AF:SELK138AF:00">항공</a>
+                </li> <!--//menu08-->
+                <li  class="menu09 menu_list">
+                    <a href="https://sp.booking.com/index.ko.html?aid=388468">호텔</a>
+                </li> <!--//menu09-->
+            </ul>
+            <div class="lnb_right">
+                <ul>
+                    <li>기획전</li>
+                    <li>상품평</li>
+                </ul>
+            </div>
+
+       </div>
+    </nav>
+   
+     <div class="slick_ex" id="slick">
+        <div class="slick_area">
+            <div class=slick_01></div>
+            <div class=slick_02></div>
+            <div class=slick_03></div>
+            <div class=slick_04></div>
+            <div class=slick_05></div>
+        </div> <!--slick_area-->
+     </div> <!--slick_ex-->
+
+     <div class="Best_destination_ex">
+        <div class="Best_destination_tit">
+        <h2>해외여행 Best5</h2>
+        </div> <!--Best_destination_tit-->
+        <div class="Best_destination_wrap">
+            <div class="Best_destination_area">
+                <div class="Best_destination_box01 Best_destination_box">
+                    <div class="Best_destination_img">
+                        <img src="./img/1_01_Tokyo.jpg" alt="Tokyo_img">
+                    </div>
+                    <div class="Best_destination_txt">
+                        <a href="#!">도쿄</a>
+                    </div>
+                </div> <!--Best_destination_box01-->
+                <div class="Best_destination_box02 Best_destination_box">
+                    <div class="Best_destination_img">
+                        <img src="./img/1_02_Eastern_Eutope.jpg" alt="Eastern_Europe_img">
+                    </div>
+                    <div class="Best_destination_txt">
+                        <a href="#!">동유럽</a>
+                    </div>
+                </div> <!--Best_destination_box02-->
+                <div class="Best_destination_box03 Best_destination_box">
+                    <div class="Best_destination_img">
+                        <img src="./img/1_03_Osaka.jpg" alt="Osaka_img">
+                    </div>
+                    <div class="Best_destination_txt">
+                        <a href="#!">오사카</a>
+                    </div>
+                </div> <!--Best_destination_box03-->
+                <div class="Best_destination_box04 Best_destination_box">
+                    <div class="Best_destination_img">
+                        <img src="./img/1_04_Danang.jpg" alt="Danang_img">
+                    </div>
+                    <div class="Best_destination_txt">
+                        <a href="#!">다낭</a>
+                    </div>
+                </div> <!--Best_destination_box04-->
+                <div class="Best_destination_box05 Best_destination_box">
+                    <div class="Best_destination_img">
+                        <img src="./img/1_05_North_Europe.jpg" alt="North_Europe_img">
+                    </div>
+                    <div class="Best_destination_txt">
+                        <a href="#!">북유럽</a>
+                    </div>
+                </div> <!--Best_destination_box05-->
+            </div> <!--Best_destination_area-->
+        </div> <!--Best_destination_wrap-->
+     </div> <!--Best_destination_ex-->
+
+
+     <div class="tra_theme_ex">
+        <section class="tra_theme_tab">
+            <input type="radio" name="tab" id="theme_tab01" checked>
+            <input type="radio" name="tab" id="theme_tab02">
+
+            <div class="theme_label">
+                <label for="theme_tab01" class="theme_label01">봄바람 솔솔 봄꽃여행</label>
+                <label for="theme_tab02" class="theme_label02">하루 이틀 가볍게 떠나는 국내여행</label>
+            </div> <!--theme_label-->
+
+            <div class="theme_sheet_area">
+                <div class="theme_sheet01 theme_sheet">
+                    <div class="theme_sheet_box01 theme_sheet_box">
+                        <div class="theme_box01 theme_box">
+                            <div class="theme_img">
+                                <img src="./img/2_01_01_Kyushu.jpg" alt="">
+                            </div>
+                            <div class="theme_txt">
+                                <h2>오감만족 큐슈 여행 3일</h2>
+                                <p class="theme_exp">몸이 즐거워지는 여행. 프리미엄 대한항공 이용,</p>
+                                <p class="theme_exp">믿을 수 있는 한진관광과 함께하는 편안한 일정.</p>
+                                <p class="theme_tag">#특급힐튼 #카이세키 #야나가와뱃놀이</p>
+                                <p class="price_txt"><span class="blue_price">599,000</span>원~</p>
+                            </div>
+                        </div> <!--theme_box01-->
+                        <div class="theme_box02 theme_box">
+                            <div class="theme_sub_box01 theme_sub_box">
+                                <div class="theme_img">
+                                    <img src="./img/2_01_02_Gurye.jpg" alt="Gurye_img">
+                                </div>
+                                <div class="theme_txt">
+                                    <h4>봄맞이 꽃나들이 여행 광양 매화마을 + 구례 산수유 꽃놀이</h4>
+                                    <p class="theme_exp">한폭의 그림같은 섬진강과 어우러진 매화 꽃놀이</p>
+                                    <p class="theme_tag"> #국내여행 #광양 #구례 #매화마을</p>
+                                    <p class="price_txt"><span class="blue_price">38,900</span>원~</p>
+                                </div>
+                            </div>
+                            <div class="theme_sub_box02 theme_sub_box">
+                                <div class="theme_img">
+                                    <img src="./img/2_01_03_Hokkaido.jpg" alt="Hokkaido_img">
+                                </div>
+                                <div class="theme_txt">
+                                    <h4>낭만가득 북해도 4일</h4>
+                                    <p class="theme_exp theme_exp01">최소의 비용, 최대의 만족.</p>
+                                    <p class="theme_exp theme_exp02">프리미엄 일본 여행을 알찬 가격으로 출발하실 수 있습니다.</p>
+                                    <p class="theme_tag"> #비에이 #소운쿄 #일본여행 #게요리</p>
+                                    <p class="price_txt"><span class="blue_price">1,049,000</span>원~</p>
+                                </div>
+                            </div> <!--theme_sub_box02-->
+                        </div> <!--theme_box02-->
+                    </div> <!--theme_sheet_box01-->
+                </div> <!--theme_sheet01-->
+                <div class="theme_sheet02 theme_sheet">
+                    <div class="theme_sheet_box01 theme_sheet_box">
+                        <div class="theme_box01 theme_box">
+                            <div class="theme_img">
+                                <img src="./img/2_02_01_jeju.jpg" alt="jeju_img">
+                            </div>
+                            <div class="theme_txt">
+                                <h2>꽃과 함께하는 제주 봄 호캉스</h2>
+                                <p class="theme_exp">제주 속 아름다운 우도 섬을 함께 볼 수 있는 실속 여행</p>
+                                <p class="theme_exp">머무는 발길마다 즐거움이 넘쳐나는 제주에서의 힐링 호캉스</p>
+                                <p class="theme_tag">#우도관광 #금오름 #섬여행 #봄꽃여행</p>
+                                <p class="price_txt"><span class="blue_price">1,049,000</span>원~</p>
+                            </div>
+                        </div> <!--theme_box01-->
+                        <div class="theme_box02 theme_box">
+                            <div class="theme_sub_box01 theme_sub_box">
+                                <div class="theme_img">
+                                    <img src="./img/2_02_02_Namhae.png" alt="Namhae_img">
+                                </div>
+                                <div class="theme_txt">
+                                    <h4>보물섬 남해 비경 완전 1주<br/>[한국관광공사 추천]</h4>
+                                    <p class="theme_exp">내 생애 꼭 한번 가봐야 할 보물섬 남해로 떠나는 여행</p>
+                                    <p class="theme_exp theme_exp_ell">내 생애 꼭 한번 가봐야 할 보물섬 남해로 떠나는 여행</p>
+                                    <p class="theme_tag"> #국내여행 #광양 #구례 #매화마을</p>
+                                    <p class="price_txt"><span class="blue_price">119,000</span>원~</p>
+                                </div>
+                            </div>
+                            <div class="theme_sub_box02 theme_sub_box">
+                                <div class="theme_img">
+                                    <img src="./img/2_02_03_Gangwon.jpg" alt="Gangwon_ㅑㅡㅎ">
+                                </div>
+                                <div class="theme_txt">
+                                    <h4>슬기로운 강원여행</h4>
+                                    <p class="theme_exp theme_exp01">낭만을 가득 담은 정동진을 시작으로 별미가득한 강원도를 둘러보는 매력적인 여행</p>
+                                    
+                                    <p class="theme_tag"> #전나무숲길 #대관령양떼목장 #양양 #속초여행</p>
+                                    <p class="price_txt"><span class="blue_price">254,000</span>원~</p>
+                                </div>
+                            </div> <!--theme_sub_box02-->
+                        </div> <!--theme_box02-->
+                    </div>
+                </div>
+            </div> <!--theme_sheet-->
+
+        </section> <!--tra_theme_tab-->
+     </div> <!--tra_theme_ex-->
+
+     <div class="sub_banner_ex">
+        <div class="sub_banner_img"></div>
+     </div>
+
+
+     <section class="content_slider_area">
+        <h2>지금 뜨고 있는 여행지</h2>
+        <input type="radio" name="content_slider" id="slider1" checked>
+        <input type="radio" name="content_slider" id="slider2">
+        <input type="radio" name="content_slider" id="slider3">
+        <input type="radio" name="content_slider" id="slider4">
+
+        <div class="controls">
+            <label for="slider1"></label>
+            <label for="slider2"></label>
+            <label for="slider3"></label>
+            <label for="slider4"></label>
+        </div>
+
+        <div class="slides">
+            <div class="overflow">
+                <div class="inner">
+                    <div class="slide slide_01">
+                        <div class="slide_img01 slide_img">
+                            <img src="./img/3_01_japan.jpg" alt="">
+                            <div class="darkness">
+                                
+                                    <p class="darkness_txt">일본 대만 크로즈 8일</p>
+                                    <p class="darkness_price">3,160,000원</p>
+                                
+                            </div> <!--darkness-->
+                        </div>
+                        <div class="slide_img02 slide_img">
+                            <img src="./img/3_02_Kagoshima.jpg" alt="">
+                            <div class="darkness">
+                                <p class="darkness_txt">가고시마 설레임 온천 4일</p>
+                                <p class="darkness_price ">1,990,000원</p>
+                            </div> <!--darkness-->  
+                        </div>
+                        <div class="slide_txt">
+                            <span class="slide_pagination_left">01</span>
+                            <span class="slide_pagination_center">/</span>
+                            <span class="slide_paginationright">04</span>
+                            
+                        </div>
+                    </div>
+                    <div class="slide slide_02">
+                        <div class="slide_img01 slide_img">
+                            <img src="./img/3_03_taiwan.jpg" alt="">
+                            <div class="darkness">
+                                <p class="darkness_txt">대만/야류/지우펀/스펀 4일</p>
+                                <p class="darkness_price ">769,000원</p>
+                            </div> <!--darkness-->
+                        </div>
+                        <div class="slide_img02 slide_img">
+                            <img src="./img/3_04_Kyushu.jpg" alt="">
+                            <div class="darkness">
+                                <p class="darkness_txt">온천의 계절. 북큐슈</p>
+                                <p class="darkness_price ">991,000원</p>
+                            </div> <!--darkness-->
+                        </div>
+                        <div class="slide_txt">
+                            <span class="slide_pagination_left">02</span>
+                            <span class="slide_pagination_center">/</span>
+                            <span class="slide_paginationright">04</span>
+                            
+                        </div>
+                    </div>
+                    <div class="slide slide_03">
+                        <div class="slide_img01 slide_img">
+                            <img src="./img/3_05_Hawaii.jpg" alt="Hawaii_img">
+                            <div class="darkness">
+                                <p class="darkness_txt">와이키키 리조트 하와이 패키지</p>
+                                <p class="darkness_price ">2,130,000원</p>
+                            </div> <!--darkness-->
+                        </div>
+                        <div class="slide_img02 slide_img">
+                            <img src="./img/3_06_Italy.jpg" alt="Italy_img">
+                            <div class="darkness">
+                                <p class="darkness_txt">돌로미티와 이탈리아 일주 9일</p>
+                                <p class="darkness_price ">4,790,000원</p>
+                            </div> <!--darkness-->
+                        </div>
+                        <div class="slide_txt">
+                            <span class="slide_pagination_left">03</span>
+                            <span class="slide_pagination_center">/</span>
+                            <span class="slide_paginationright">04</span>
+                            
+                        </div>
+                    </div>
+                    <div class="slide slide_04">
+                        <div class="slide_img01 slide_img">
+                            <img src="./img/3_07_South_America.jpg" alt="South_America_img">
+                            <div class="darkness">
+                                <p class="darkness_txt">우유니 소금사막 + 남미 16일</p>
+                                <p class="darkness_price ">22,200,000원</p>
+                            </div> <!--darkness-->
+                        </div>
+                        <div class="slide_img02 slide_img">
+                            <img src="./img/3_08_Western_Europe.jpg" alt="Western_Europe_img">
+                            <div class="darkness">
+                                <p class="darkness_txt">서유럽 4개국 10일</p>
+                                <p class="darkness_price ">3,697,000원</p>
+                            </div> <!--darkness-->
+                        </div>
+                        <div class="slide_txt">
+                            <span class="slide_pagination_left">04</span>
+                            <span class="slide_pagination_center">/</span>
+                            <span class="slide_paginationright">04</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+
+
+
+     <section class="popular_area">
+        <div class="popular_tit">
+            <h2>지금 뜨고 있는 여행지</h2>
+            <span class="popular_plus"><i class="fas fa-plus"></i> 더보기</span>
+        </div>
+        <div class="popular_destination popular_destination01">
+            <div class="popular_box popular_box01">
+                <div class="popular_content01 popular_content">
+                    <div class="popular_img">
+                        <img src="./img/3_01_japan.jpg" alt="japan_img">
+                        <div class="dark_bgc">
+                            <div class="dark_bgc_box">
+                                <p class="dark_bgc_txt">일본 대만 크루즈 8일</p>
+                                <p class="dark_bgc_price"><span>3,160,000</span> 원~</p>
+                                <span class="view_box">자세히보기</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--popular_box01-->
+            <div class="popular_box popular_box02">
+                <div class="popular_content01 popular_content">
+                    <div class="popular_img">
+                        <img src="./img/3_02_Kagoshima.jpg" alt="Kagoshima_img">
+                        <div class="dark_bgc">
+                            <p class="dark_bgc_txt">가고시마 설레임 온천 4일</p>
+                            <p class="dark_bgc_price"><span>1,990,000</span> 원~</p>
+                            <span class="view_box">자세히보기</span>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--popular_box02-->
+            <div class="popular_box popular_box03">
+                <div class="popular_content01 popular_content">
+                    <div class="popular_img">
+                        <img src="./img/3_03_taiwan.jpg" alt="taiwan_img">
+                        <div class="dark_bgc">
+                            <p class="dark_bgc_txt">대만/야류/지우펀/스펀 4일</p>
+                            <p class="dark_bgc_price"><span>769,000</span> 원~</p>
+                            <span class="view_box">자세히보기</span>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--popular_box03-->
+            <div class="popular_box popular_box04">
+                <div class="popular_content01 popular_content">
+                    <div class="popular_img">
+                        <img src="./img/3_04_Kyushu.jpg" alt="kyushu_img">
+                        <div class="dark_bgc">
+                            <p class="dark_bgc_txt">온천의 계절. 북큐슈</p>
+                            <p class="dark_bgc_price"><span>991,000</span> 원~</p>
+                            <span class="view_box">자세히보기</span>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--popular_box04-->
+        </div> <!--popular_destination01-->
+        <div class="popular_destination popular_destination02">
+            <div class="popular_box popular_box01">
+                <div class="popular_content01 popular_content">
+                    <div class="popular_img">
+                        <img src="./img/3_05_Hawaii.jpg" alt="Hawaii_img">
+                        <div class="dark_bgc">
+                            <p class="dark_bgc_txt">와이키키 리조트 하와이 패키지</p>
+                            <p class="dark_bgc_price"><span>2,130,000</span> 원~</p>
+                            <span class="view_box">자세히보기</span>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--popular_box01-->
+            <div class="popular_box popular_box02">
+                <div class="popular_content01 popular_content">
+                    <div class="popular_img">
+                        <img src="./img/3_06_Italy.jpg" alt="Italy_img">
+                        <div class="dark_bgc">
+                            <p class="dark_bgc_txt">돌로미티와 이탈리아 일주 9일</p>
+                            <p class="dark_bgc_price"><span>4,790,000</span> 원~</p>
+                            <span class="view_box">자세히보기</span>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--popular_box02-->
+            <div class="popular_box popular_box03">
+                <div class="popular_content01 popular_content">
+                    <div class="popular_img">
+                        <img src="./img/3_07_South_America.jpg" alt="South_America_img">
+                        <div class="dark_bgc">
+                            <p class="dark_bgc_txt">우유니 소금사막 + 남미 16일</p>
+                            <p class="dark_bgc_price"><span>22,200,000</span> 원~</p>
+                            <span class="view_box">자세히보기</span>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--popular_box03-->
+            <div class="popular_box popular_box04">
+                <div class="popular_content01 popular_content">
+                    <div class="popular_img">
+                        <img src="./img/3_08_Western_Europe.jpg" alt="Western_Europe_img">
+                        <div class="dark_bgc">
+                            <p class="dark_bgc_txt">서유럽 4개국 10일</p>
+                            <p class="dark_bgc_price"><span>3,697,000</span> 원~</p>
+                            <span class="view_box">자세히보기</span>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--popular_box04-->
+        </div> <!--popular_destination-->
+     </section> <!--popular_area-->
+
+
+
+
+
+     <section class="healing_tra_area">
+        <div class="healing_tra_tit">
+            <h2>추천 힐링여행</h2>
+        </div>
+        <div class="healing_tra_content">
+            <div class="healing_tra_box01 healing_tra_box">
+                <div class="healing_tra01 healing_tra">
+                    <div class="healing_img">
+                        <img src="./img/4_01_Guam.jpg" alt="Guam_img">
+                    </div>
+                    <div class="healing_txt">
+                        <h4 class="healing_tit">괌 하얏트 자연 친화적인 여행</h4>
+                        <p class="healing_tag">#오션뷰룸 #조식포함 #자유여행</p>
+                        <p class="healing_price"><span class="healing_blue_price">1,499,000</span>원~</p>
+                    </div>
+                </div>
+                <div class="healing_tra02 healing_tra">
+                    <div class="healing_img">
+                        <img src="./img/4_02_Swiss.jpg" alt="Swiss_img">
+                    </div>
+                    <div class="healing_txt">
+                        <h4 class="healing_tit">스위스일주 8일</h4>
+                        <p class="healing_tag">#힐링알프스여행 #자유여행 #루체른</p>
+                        <p class="healing_price"><span class="healing_blue_price">3,699,000</span>원~</p>
+                    </div>
+                </div>
+            </div>
+            <div class="healing_tra_box02 healing_tra_box">
+                <div class="healing_tra01 healing_tra">
+                    <div class="healing_img">
+                        <img src="./img/4_03_Bangkok.jpg" alt="Bangkok_img">
+                    </div>
+                    <div class="healing_txt">
+                        <h4 class="healing_tit">방콕 자유여행</h4>
+                        <p class="healing_tag">#로맨틱 #호캉스 #낭만가득 #휴식여핼</p>
+                        <p class="healing_price"><span class="healing_blue_price">809,000</span>원~</p>
+                    </div>
+                </div>
+                <div class="healing_tra02 healing_tra">
+                    <div class="healing_img">
+                        <img src="./img/4_04_Eastern_Europe.jpg" alt="Eastern_Europe_img">
+                    </div>
+                    <div class="healing_txt">
+                        <h4 class="healing_tit">동유럽 4국(체/오/헝/독)+발칸 2일</h4>
+                        <p class="healing_tag">#부다페스트온천 #자유여행 #호캉스 #문화도시</p>
+                        <p class="healing_price"><span class="healing_blue_price">2,840,000</span>원~</p>
+                    </div>
+                </div>
+            </div>
+            <div class="healing_tra_plus">
+                <span><i class="fas fa-plus"></i> 더보기</span>
+            </div> <!--healing_tra_plus-->
+        </div>
+     </section>
+
+
+     <div class="event_area">
+        <div class="event_box01 event_box">
+            <div class="event_img"></div>
+        </div>
+        <div class="event_box02 event_box">
+            <div class="event_img"></div>
+        </div>
+     </div>
+
+
+     <div class="guide_area">
+        <div class="center_area">
+            <div class="number_box">
+                <div class="center_call">
+                    <p class="center_name">한진관광 고객센터</p>
+                    <p class="center_call_number">1566-1155</p>
+                </div>
+                <div class="question_number">
+                    <p class="question">자주 찾는 질문 &nbsp<i class="fas fa-chevron-right"></i></p>
+                    <p class="center_guide">ARS 상담번호 안내 &nbsp<i class="fas fa-chevron-right"></i></p>
+                </div>
+            </div> <!--number_box-->
+            <div class="number_infomation">
+                <ul>
+                    <li>상담번호안내</li>
+                    <li>1번 해외여행</li>
+                    <li>2번 항공권 관련문의</li>
+                    <li>3번 국내여행</li>
+                    <li>4번 ARS 카드결제</li>
+                    <li>0번 상담원 연결</li>
+                </ul>
+            </div>
+            <div class="time_box">
+                <div class="time_guide">
+                    <p class="time_guide_01">평일 09:00 ~ 18:00</p>
+                    <p class="time_guide_02">토, 일, 공휴일 휴무</p>
+                </div>
+                <div class="agency_guide">
+                    <p class="agency_guide_01"><span>전국 대리점</span>안내</p>
+                    <p class="agency_guide_02">자세히 보기 &nbsp<i class="fas fa-chevron-right"></i></p>
+                </div>
+            </div> <!--time_box-->
+        </div> <!--center_area-->
+        <div class="check_area">
+            <input type="checkbox" id="notice_check">
+            <label for="notice_check" class="notice_label">알려드립니다<i class="fas fa-sort-down"></i></label>
+            <span>더보기 +</span>
+            <div class="notice_area">
+                <ul>
+                    <li>[당첨자발표] 2023 토끼는 여행을 좋아해 이벤트</li>
+                    <li>[당첨자발표] 2023 새해복 머니 댓글 이벤트</li>
+                    <li>[당첨자발표] 카카오톡 친구추가 이벤트</li>
+                </ul>
+            </div>
+        </div> <!--check_area-->
+        <div class="notice_box">
+            <div class="notice_tit">
+                <h4>알려드립니다</h4>
+                <span><i class="fas fa-plus"></i> 더보기</span>
+            </div>
+            <div class="notice_list">
+                <ul>
+                    <li>[당첨자발표] 2023 토끼는 여행을 좋아해 이벤트</li>
+                    <li>[당첨자발표] 2023 새해복 머니 댓글 이벤트</li>
+                    <li>[당첨자발표] 카카오톡 친구추가 이벤트</li>
+                </ul>
+            </div>
+        </div> <!--notice_box-->
+     </div> <!--guide_area-->
+
+     <div class="info_ex">
+        <div class="sns_area">
+            <div class="facebook_box sns_box">
+                <a href="https://www.facebook.com/kaltourstory"><img src="./img/facebook_icon.png" alt="facebook_icon"></a>
+            </div>
+            <div class="instagram_box sns_box">
+                <a href="https://www.instagram.com/kaltour_official/"><img src="./img/instagram_icon.png" alt="instagram_icon"></a>
+            </div>
+            <div class="kakaoplus_box sns_box">
+                <a href="https://pf.kakao.com/_xhvfxjl"><img src="./img/kakaoplus_icon.png" alt="kakaoplus_icon"></a>
+            </div>
+            <div class="naverblog_box sns_box">
+                <a href="https://blog.naver.com/kal_tour"><img src="./img/naverblog_icon.png" alt="naverblog_icon"></a>
+            </div>
+            <div class="youtube_box sns_box"><a href="https://www.youtube.com/channel/UCGMvZZIG9TB4MlhLD_CNRwA"><img src="./img/youtube_icon.png" alt=""></a></div>
+            <div class="kakaostory_box sns_box">
+                <a href="https://story.kakao.com/ch/ekaltour"><img src="./img/kakaostory_icon.png" alt=""></a>
+            </div>
+        </div>
+        <div class="info_area"> 
+            <table>
+                <tr>
+                    <td>회사소개</td>
+                    <td>찾아오시는길</td>
+                    <td>여행상품권</td>
+                </tr>
+                <tr>
+                    <td>여행약관</td>
+                    <td>여행자보험</td>
+                    <td>개인정보처리방침</td>
+                </tr>
+            </table>
+            <div class="info_line">
+                <div class="info_box">
+                    <ul>
+                        <li>회사소개</li>
+                        <li>찾아오시는길</li>
+                        <li>여행상품권</li>
+                        <li>여행약관</li>
+                        <li>여행자보험</li>
+                        <li>개인정보처리방침</li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!--info_area-->
+     </div>
+
+     <footer class="footer">
+        <div class="company_area">
+            <input type="checkbox" id="company_check">
+            <label for="company_check" class="company_label">(주)한진관광 <i class="fas fa-chevron-down"></i></label>
+            <div class="company_info_box">
+                <div class="company_info01">
+                    <p>대표이사 안교욱 | 서울 중구 소공로 88(소공동) 한진빌딩 신관 8층</p>
+                    <p>사업자 등록번호 104-86-46544 | 관광사업자 등록번호 제 1983-01호 | 통신판매 신고업 제 2013-서울 중구 0270호</p>
+                </div>
+                <div class="company_info02">
+                    <p>일반 여행업 영업보증보험 10억원 가입 | 기획여행 실시에 따른 보증보험 5억원 가입</p>
+                </div>
+            </div>
+        </div> <!--company_area-->
+        <div class="company_box">
+            <div class="company_info_01">
+                <h4>(주)한진관광</h4>
+                <p>대표이사 안교욱 | 서울 중구 소공로 88(소공동) 한진빌딩 신관 8층</p>
+                <p>사업자 등록번호 104-86-46544 | 관광사업자 등록번호 제 1983-01호 | 통신판매 신고업 제 2013-서울 중구 0270호</p>
+                <span class="bus_info">사업자정보확인</span>
+            </div> <!--company_info_01-->
+            <div class="company_info_02">
+                <p>일반 여행업 영업보증보험 10억원 가입 | 기획여행 실시에 따른 보증보험 5억원 가입</p>
+            </div>
+            <div class="company_info_03">
+                <p>한진관광은 개별 항공권, 단품 및 여행 상품에 대하여 통신판매 중개자로서 통신 판매의 당사자가 아니며, <br />해당 상품의 거래 정보 및 거래에 대해 책임을 지지 않습니다.</p>
+                <div class="family_site_box">
+                    <input type="checkbox" id="family_chk">
+                    <label for="family_chk" class="family_label">패밀리 사이트<i class="fas fa-angle-down"></i></label>
+                    <div class="family_site">
+                        <ul class="family_list1">
+                            <li>외국인 국내관광(Elglish)</li>
+                        </ul>
+                        <h4>기타 계열사</h4>
+                        <ul class="family_list2">
+                            <li>대한항공</li>
+                            <li>진에어</li>
+                            <li>(주)한진</li>
+                            <li>한진드림익스프레스</li>
+                            <li>KAL호텔</li>
+                            <li>KAL리무진</li>
+                            <li>한진정보통신</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="center_box_web">
+            <h4>고객센터</h4>
+            <ul class="center_01">
+                <li>여행상담 1566-1155</li>
+                <li>기업/단체여행 02-726-5759</li>
+                <li>대리점 문의 02-726-5880</li>
+            </ul>
+            <ul class="center_01">
+                <li>대표메일 ediz@kaltour.com</li>
+                <li>selobsd@kaltour.com</li>
+            </ul>
+        </div>
+       
+     </footer>
+     <div class="copyright">
+        <p>Copyright ⓒ HANJIN TRAVEL. All Rights Reserved</p>
+    </div>
+
+     
+     <aside class="top_btn_box">
+        <a href="#header" class="top_btn"><i class="fas fa-chevron-up"></i></a>
+     </aside>
+
+     <aside class="top_btn_box_web">
+        <a href="#header_w" class="top_btn_web"><i class="fas fa-chevron-up"></i></a>
+     </aside>
+
+     <aside class="quick_menu">
+        <div class="quick_01 quick">
+            <img src="./img/icon_watch_off.png" alt="icon_watch_off">
+            <span>최근본상품</span>
+        </div>
+        <div class="quick_02 quick">
+            <img src="./img/clipboard.png" alt="">
+            <span>예약내역</span>
+        </div>
+        <div class="quick_03 quick">
+            <img src="./img/icon_likes_off.png" alt="">
+            <span>관심상품</span>
+        </div>
+        <div class="quick_04 quick">
+            <img src="./img/icon_phone_off.png" alt="">
+            <span>고객센터</span>
+        </div>
+     </aside>
+
+     
+
+ 
+
+
+
+
+
+     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" ></script>
+     <script>
+         $(document).ready(function(){
+   $('.slick_area').slick({
+    autoplay: true,
+    dots:true,
+    arrows: false,
+    // setting-name: setting-value
+   });
+ });
+     </script>
+
+</body>
+</html>
